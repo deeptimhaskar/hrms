@@ -8,4 +8,5 @@ import com.org.tcs.morganstanley.hrms.entity.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
+	public Employee findByNameAndMobnumber(String name,String mob);
 }
