@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "79423ef0-966a-4429-8a88-f9f1f8bcc076",
+		"name": "HRMS_NEW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19094783",
+		"_collection_link": "https://universal-capsule-37431.postman.co/workspace/Advance_JAVAWorkspace~83b797f5-e699-4c11-919f-eba11a849d86/collection/19094783-79423ef0-966a-4429-8a88-f9f1f8bcc076?action=share&source=collection_link&creator=19094783"
+	},
+	"item": [
+		{
+			"name": "attendance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/attendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attendance Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/testlogger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"testlogger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Deepti\",\r\n    \"perAddress\": \"Hinjewadi\",\r\n    \"city\": \"Pune\",\r\n    \"mobnumber\": \"9999999999\",\r\n    \"email\": \"abc@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/createemp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"createemp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
