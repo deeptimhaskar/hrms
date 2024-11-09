@@ -32,5 +32,4 @@ public class Employee {
 
 	@Column(name = "vehicleNo", length = 50)
 	private String vehicleNo;
-
 }

@@ -9,7 +9,10 @@ import com.org.tcs.morganstanley.hrms.entity.Admin;
 import com.org.tcs.morganstanley.hrms.repository.AdminRepo;
 import com.org.tcs.morganstanley.hrms.service.AdminService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class AdminServiceImpl implements AdminService{
 
 	@Autowired
@@ -26,6 +29,7 @@ public class AdminServiceImpl implements AdminService{
 	
 	@Override
 	public Admin createAdmin(Admin admin, String password, String name) {
+		log.info("inside the admin create service");
 		if(checkAdmin(password, name)) {
 			return adminRepo.save(admin);
 		}
@@ -34,6 +38,7 @@ public class AdminServiceImpl implements AdminService{
 
 	@Override
 	public String deleteAdmin(Long id, String password, String name) {
+		log.info("inside the admin delete service");
 		if(checkAdmin(password, name)) {
 			adminRepo.deleteById(id);
 			return "delete success";
